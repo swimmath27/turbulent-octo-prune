@@ -26,12 +26,6 @@ extension UIView {
 }
 class SignUpInViewController: UIViewController {
 
-
-    @IBOutlet weak var bcEmail: NSLayoutConstraint!
-    @IBOutlet weak var bcPassword: NSLayoutConstraint!
-    @IBOutlet weak var bcLogo: NSLayoutConstraint!
-
-
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
 	@IBOutlet weak var message: UILabel!
 	@IBOutlet weak var emailAddress: UITextField!
@@ -101,6 +95,28 @@ class SignUpInViewController: UIViewController {
 	
 	@IBAction func signIn(sender: AnyObject) {
 
+        activityIndicator.hidden = false
+        activityIndicator.startAnimating()
+
+        var userEmailAddress = emailAddress.text
+        userEmailAddress = userEmailAddress.lowercaseString
+
+        var userPassword = password.text
+
+        PFUser.logInWithUsernameInBackground(userEmailAddress, password:userPassword) {
+            (user: PFUser?, error: NSError?) -> Void in
+            if user != nil {
+                dispatch_async(dispatch_get_main_queue()) {
+                    self.performSegueWithIdentifier("signInToNavigation", sender: self)
+                }
+            } else {
+                self.activityIndicator.stopAnimating()
+                
+                if let message: AnyObject = error!.userInfo!["error"] {
+                    self.message.text = "\(message)"
+                }
+            }
+        }
 	}
 
     override func touchesBegan(touches: Set<NSObject>, withEvent event: UIEvent) {

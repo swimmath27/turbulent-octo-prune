@@ -27,6 +27,7 @@
 		5526A03E1BA4A4D600BD694D /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 5526A03D1BA4A4D600BD694D /* libsqlite3.dylib */; };
 		5526A0401BA4AB7D00BD694D /* surva-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 5526A03F1BA4AB7D00BD694D /* surva-logo.png */; };
 		5526A0451BA4BE5900BD694D /* SignUpInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5526A0441BA4BE5900BD694D /* SignUpInViewController.swift */; };
+		5526A0491BA4ED4A00BD694D /* SurveyListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5526A0481BA4ED4A00BD694D /* SurveyListController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +67,7 @@
 		5526A03F1BA4AB7D00BD694D /* surva-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "surva-logo.png"; sourceTree = "<group>"; };
 		5526A0431BA4B99C00BD694D /* Surva-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Surva-Bridging-Header.h"; sourceTree = "<group>"; };
 		5526A0441BA4BE5900BD694D /* SignUpInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpInViewController.swift; sourceTree = "<group>"; };
+		5526A0481BA4ED4A00BD694D /* SurveyListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SurveyListController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +143,7 @@
 				550468171BA3CE110083786E /* Supporting Files */,
 				5526A0431BA4B99C00BD694D /* Surva-Bridging-Header.h */,
 				5526A0441BA4BE5900BD694D /* SignUpInViewController.swift */,
+				5526A0481BA4ED4A00BD694D /* SurveyListController.swift */,
 			);
 			path = Surva;
 			sourceTree = "<group>";
@@ -273,6 +276,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5504681A1BA3CE110083786E /* AppDelegate.swift in Sources */,
+				5526A0491BA4ED4A00BD694D /* SurveyListController.swift in Sources */,
 				5504681D1BA3CE110083786E /* Surva.xcdatamodeld in Sources */,
 				5526A0451BA4BE5900BD694D /* SignUpInViewController.swift in Sources */,
 			);
