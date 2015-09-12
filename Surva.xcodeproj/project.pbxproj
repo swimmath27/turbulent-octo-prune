@@ -9,11 +9,24 @@
 /* Begin PBXBuildFile section */
 		5504681A1BA3CE110083786E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550468191BA3CE110083786E /* AppDelegate.swift */; };
 		5504681D1BA3CE110083786E /* Surva.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5504681B1BA3CE110083786E /* Surva.xcdatamodeld */; };
-		5504681F1BA3CE110083786E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5504681E1BA3CE110083786E /* ViewController.swift */; };
 		550468221BA3CE110083786E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 550468201BA3CE110083786E /* Main.storyboard */; };
 		550468241BA3CE110083786E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 550468231BA3CE110083786E /* Images.xcassets */; };
 		550468271BA3CE110083786E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 550468251BA3CE110083786E /* LaunchScreen.xib */; };
 		550468331BA3CE110083786E /* SurvaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550468321BA3CE110083786E /* SurvaTests.swift */; };
+		5526A0291BA4A45500BD694D /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5526A0271BA4A45500BD694D /* Bolts.framework */; };
+		5526A02A1BA4A45500BD694D /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5526A0281BA4A45500BD694D /* Parse.framework */; };
+		5526A02C1BA4A49600BD694D /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5526A02B1BA4A49600BD694D /* AudioToolbox.framework */; };
+		5526A02E1BA4A49C00BD694D /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5526A02D1BA4A49C00BD694D /* CFNetwork.framework */; };
+		5526A0301BA4A4A400BD694D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5526A02F1BA4A4A400BD694D /* CoreGraphics.framework */; };
+		5526A0321BA4A4AA00BD694D /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5526A0311BA4A4AA00BD694D /* CoreLocation.framework */; };
+		5526A0341BA4A4B100BD694D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5526A0331BA4A4B100BD694D /* QuartzCore.framework */; };
+		5526A0361BA4A4B800BD694D /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5526A0351BA4A4B800BD694D /* Security.framework */; };
+		5526A0381BA4A4BF00BD694D /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5526A0371BA4A4BF00BD694D /* StoreKit.framework */; };
+		5526A03A1BA4A4C500BD694D /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5526A0391BA4A4C500BD694D /* SystemConfiguration.framework */; };
+		5526A03C1BA4A4CD00BD694D /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 5526A03B1BA4A4CD00BD694D /* libz.dylib */; };
+		5526A03E1BA4A4D600BD694D /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 5526A03D1BA4A4D600BD694D /* libsqlite3.dylib */; };
+		5526A0401BA4AB7D00BD694D /* surva-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 5526A03F1BA4AB7D00BD694D /* surva-logo.png */; };
+		5526A0451BA4BE5900BD694D /* SignUpInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5526A0441BA4BE5900BD694D /* SignUpInViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,13 +44,28 @@
 		550468181BA3CE110083786E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		550468191BA3CE110083786E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5504681C1BA3CE110083786E /* Surva.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Surva.xcdatamodel; sourceTree = "<group>"; };
-		5504681E1BA3CE110083786E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		550468211BA3CE110083786E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		550468231BA3CE110083786E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		550468261BA3CE110083786E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		5504682C1BA3CE110083786E /* SurvaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SurvaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		550468311BA3CE110083786E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		550468321BA3CE110083786E /* SurvaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurvaTests.swift; sourceTree = "<group>"; };
+		5504683C1BA3DA210083786E /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; };
+		5526A0271BA4A45500BD694D /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		5526A0281BA4A45500BD694D /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		5526A02B1BA4A49600BD694D /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		5526A02D1BA4A49C00BD694D /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		5526A02F1BA4A4A400BD694D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		5526A0311BA4A4AA00BD694D /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		5526A0331BA4A4B100BD694D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		5526A0351BA4A4B800BD694D /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		5526A0371BA4A4BF00BD694D /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		5526A0391BA4A4C500BD694D /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		5526A03B1BA4A4CD00BD694D /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		5526A03D1BA4A4D600BD694D /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		5526A03F1BA4AB7D00BD694D /* surva-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "surva-logo.png"; sourceTree = "<group>"; };
+		5526A0431BA4B99C00BD694D /* Surva-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Surva-Bridging-Header.h"; sourceTree = "<group>"; };
+		5526A0441BA4BE5900BD694D /* SignUpInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpInViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +73,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5526A03E1BA4A4D600BD694D /* libsqlite3.dylib in Frameworks */,
+				5526A03C1BA4A4CD00BD694D /* libz.dylib in Frameworks */,
+				5526A03A1BA4A4C500BD694D /* SystemConfiguration.framework in Frameworks */,
+				5526A0381BA4A4BF00BD694D /* StoreKit.framework in Frameworks */,
+				5526A0361BA4A4B800BD694D /* Security.framework in Frameworks */,
+				5526A0341BA4A4B100BD694D /* QuartzCore.framework in Frameworks */,
+				5526A0321BA4A4AA00BD694D /* CoreLocation.framework in Frameworks */,
+				5526A0301BA4A4A400BD694D /* CoreGraphics.framework in Frameworks */,
+				5526A02E1BA4A49C00BD694D /* CFNetwork.framework in Frameworks */,
+				5526A02C1BA4A49600BD694D /* AudioToolbox.framework in Frameworks */,
+				5526A02A1BA4A45500BD694D /* Parse.framework in Frameworks */,
+				5526A0291BA4A45500BD694D /* Bolts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +101,19 @@
 		5504680B1BA3CE100083786E = {
 			isa = PBXGroup;
 			children = (
+				5526A03D1BA4A4D600BD694D /* libsqlite3.dylib */,
+				5526A03B1BA4A4CD00BD694D /* libz.dylib */,
+				5526A0391BA4A4C500BD694D /* SystemConfiguration.framework */,
+				5526A0371BA4A4BF00BD694D /* StoreKit.framework */,
+				5526A0351BA4A4B800BD694D /* Security.framework */,
+				5526A0331BA4A4B100BD694D /* QuartzCore.framework */,
+				5526A0311BA4A4AA00BD694D /* CoreLocation.framework */,
+				5526A02F1BA4A4A400BD694D /* CoreGraphics.framework */,
+				5526A02D1BA4A49C00BD694D /* CFNetwork.framework */,
+				5526A02B1BA4A49600BD694D /* AudioToolbox.framework */,
+				5526A0271BA4A45500BD694D /* Bolts.framework */,
+				5526A0281BA4A45500BD694D /* Parse.framework */,
+				5504683C1BA3DA210083786E /* MyPlayground.playground */,
 				550468161BA3CE110083786E /* Surva */,
 				5504682F1BA3CE110083786E /* SurvaTests */,
 				550468151BA3CE110083786E /* Products */,
@@ -79,13 +132,15 @@
 		550468161BA3CE110083786E /* Surva */ = {
 			isa = PBXGroup;
 			children = (
+				5526A03F1BA4AB7D00BD694D /* surva-logo.png */,
 				550468191BA3CE110083786E /* AppDelegate.swift */,
-				5504681E1BA3CE110083786E /* ViewController.swift */,
 				550468201BA3CE110083786E /* Main.storyboard */,
 				550468231BA3CE110083786E /* Images.xcassets */,
 				550468251BA3CE110083786E /* LaunchScreen.xib */,
 				5504681B1BA3CE110083786E /* Surva.xcdatamodeld */,
 				550468171BA3CE110083786E /* Supporting Files */,
+				5526A0431BA4B99C00BD694D /* Surva-Bridging-Header.h */,
+				5526A0441BA4BE5900BD694D /* SignUpInViewController.swift */,
 			);
 			path = Surva;
 			sourceTree = "<group>";
@@ -164,6 +219,7 @@
 				TargetAttributes = {
 					550468131BA3CE110083786E = {
 						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = A73DB29D37;
 					};
 					5504682B1BA3CE110083786E = {
 						CreatedOnToolsVersion = 6.4;
@@ -195,6 +251,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5526A0401BA4AB7D00BD694D /* surva-logo.png in Resources */,
 				550468221BA3CE110083786E /* Main.storyboard in Resources */,
 				550468271BA3CE110083786E /* LaunchScreen.xib in Resources */,
 				550468241BA3CE110083786E /* Images.xcassets in Resources */,
@@ -215,9 +272,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5504681F1BA3CE110083786E /* ViewController.swift in Sources */,
 				5504681A1BA3CE110083786E /* AppDelegate.swift in Sources */,
 				5504681D1BA3CE110083786E /* Surva.xcdatamodeld in Sources */,
+				5526A0451BA4BE5900BD694D /* SignUpInViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -346,9 +403,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = Surva/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SDKROOT = iphoneos;
 			};
 			name = Debug;
 		};
@@ -356,9 +422,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = Surva/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SDKROOT = iphoneos;
 			};
 			name = Release;
 		};
@@ -415,6 +490,7 @@
 				550468381BA3CE110083786E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		550468391BA3CE110083786E /* Build configuration list for PBXNativeTarget "SurvaTests" */ = {
 			isa = XCConfigurationList;
@@ -423,6 +499,7 @@
 				5504683B1BA3CE110083786E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
