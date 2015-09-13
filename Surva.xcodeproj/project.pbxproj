@@ -31,7 +31,17 @@
 		5526A03E1BA4A4D600BD694D /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 5526A03D1BA4A4D600BD694D /* libsqlite3.dylib */; };
 		5526A0401BA4AB7D00BD694D /* surva-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 5526A03F1BA4AB7D00BD694D /* surva-logo.png */; };
 		5526A0451BA4BE5900BD694D /* SignUpInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5526A0441BA4BE5900BD694D /* SignUpInViewController.swift */; };
+		553AFB5F1BA5834C00C3A000 /* surva-logo 58.png in Resources */ = {isa = PBXBuildFile; fileRef = 553AFB5E1BA5834C00C3A000 /* surva-logo 58.png */; };
 		55E1F7DE1BA520770076319D /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55E1F7DD1BA520770076319D /* SignUpViewController.swift */; };
+		55E1F7F11BA57F760076319D /* surva-logo 87.png in Resources */ = {isa = PBXBuildFile; fileRef = 55E1F7E71BA57F760076319D /* surva-logo 87.png */; };
+		55E1F7F21BA57F760076319D /* surva-logo 76.png in Resources */ = {isa = PBXBuildFile; fileRef = 55E1F7E81BA57F760076319D /* surva-logo 76.png */; };
+		55E1F7F31BA57F760076319D /* surva-logo 120.png in Resources */ = {isa = PBXBuildFile; fileRef = 55E1F7E91BA57F760076319D /* surva-logo 120.png */; };
+		55E1F7F41BA57F760076319D /* surva-logo 180.png in Resources */ = {isa = PBXBuildFile; fileRef = 55E1F7EA1BA57F760076319D /* surva-logo 180.png */; };
+		55E1F7F51BA57F760076319D /* surva-logo 80.png in Resources */ = {isa = PBXBuildFile; fileRef = 55E1F7EB1BA57F760076319D /* surva-logo 80.png */; };
+		55E1F7F71BA57F760076319D /* surva-logo 29.png in Resources */ = {isa = PBXBuildFile; fileRef = 55E1F7ED1BA57F760076319D /* surva-logo 29.png */; };
+		55E1F7F81BA57F760076319D /* surva-logo 40.png in Resources */ = {isa = PBXBuildFile; fileRef = 55E1F7EE1BA57F760076319D /* surva-logo 40.png */; };
+		55E1F7F91BA57F760076319D /* surva-logo 400.png in Resources */ = {isa = PBXBuildFile; fileRef = 55E1F7EF1BA57F760076319D /* surva-logo 400.png */; };
+		55E1F7FA1BA57F760076319D /* surva-logo 152.png in Resources */ = {isa = PBXBuildFile; fileRef = 55E1F7F01BA57F760076319D /* surva-logo 152.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,7 +85,17 @@
 		5526A03F1BA4AB7D00BD694D /* surva-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "surva-logo.png"; sourceTree = "<group>"; };
 		5526A0431BA4B99C00BD694D /* Surva-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Surva-Bridging-Header.h"; sourceTree = "<group>"; };
 		5526A0441BA4BE5900BD694D /* SignUpInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpInViewController.swift; sourceTree = "<group>"; };
+		553AFB5E1BA5834C00C3A000 /* surva-logo 58.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "surva-logo 58.png"; sourceTree = "<group>"; };
 		55E1F7DD1BA520770076319D /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		55E1F7E71BA57F760076319D /* surva-logo 87.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "surva-logo 87.png"; sourceTree = "<group>"; };
+		55E1F7E81BA57F760076319D /* surva-logo 76.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "surva-logo 76.png"; sourceTree = "<group>"; };
+		55E1F7E91BA57F760076319D /* surva-logo 120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "surva-logo 120.png"; sourceTree = "<group>"; };
+		55E1F7EA1BA57F760076319D /* surva-logo 180.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "surva-logo 180.png"; sourceTree = "<group>"; };
+		55E1F7EB1BA57F760076319D /* surva-logo 80.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "surva-logo 80.png"; sourceTree = "<group>"; };
+		55E1F7ED1BA57F760076319D /* surva-logo 29.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "surva-logo 29.png"; sourceTree = "<group>"; };
+		55E1F7EE1BA57F760076319D /* surva-logo 40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "surva-logo 40.png"; sourceTree = "<group>"; };
+		55E1F7EF1BA57F760076319D /* surva-logo 400.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "surva-logo 400.png"; sourceTree = "<group>"; };
+		55E1F7F01BA57F760076319D /* surva-logo 152.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "surva-logo 152.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,6 +184,16 @@
 		550468171BA3CE110083786E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				55E1F7E71BA57F760076319D /* surva-logo 87.png */,
+				55E1F7E81BA57F760076319D /* surva-logo 76.png */,
+				553AFB5E1BA5834C00C3A000 /* surva-logo 58.png */,
+				55E1F7E91BA57F760076319D /* surva-logo 120.png */,
+				55E1F7EA1BA57F760076319D /* surva-logo 180.png */,
+				55E1F7EB1BA57F760076319D /* surva-logo 80.png */,
+				55E1F7ED1BA57F760076319D /* surva-logo 29.png */,
+				55E1F7EE1BA57F760076319D /* surva-logo 40.png */,
+				55E1F7EF1BA57F760076319D /* surva-logo 400.png */,
+				55E1F7F01BA57F760076319D /* surva-logo 152.png */,
 				550468181BA3CE110083786E /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -267,10 +297,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55E1F7F91BA57F760076319D /* surva-logo 400.png in Resources */,
 				5526A0401BA4AB7D00BD694D /* surva-logo.png in Resources */,
 				550468221BA3CE110083786E /* Main.storyboard in Resources */,
+				55E1F7F21BA57F760076319D /* surva-logo 76.png in Resources */,
+				55E1F7F71BA57F760076319D /* surva-logo 29.png in Resources */,
+				55E1F7F31BA57F760076319D /* surva-logo 120.png in Resources */,
 				550468271BA3CE110083786E /* LaunchScreen.xib in Resources */,
+				55E1F7FA1BA57F760076319D /* surva-logo 152.png in Resources */,
+				553AFB5F1BA5834C00C3A000 /* surva-logo 58.png in Resources */,
+				55E1F7F51BA57F760076319D /* surva-logo 80.png in Resources */,
+				55E1F7F41BA57F760076319D /* surva-logo 180.png in Resources */,
 				550468241BA3CE110083786E /* Images.xcassets in Resources */,
+				55E1F7F11BA57F760076319D /* surva-logo 87.png in Resources */,
+				55E1F7F81BA57F760076319D /* surva-logo 40.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

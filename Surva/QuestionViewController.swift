@@ -11,7 +11,7 @@ import Parse
 
 class QuestionViewController: UIViewController {
     
-    var currentObject: PFObject?
+    var currentObject: PFObject = PFObject()
     var currentpos: Int = 0
 
     @IBOutlet weak var IV: UIImageView!
@@ -64,7 +64,7 @@ class QuestionViewController: UIViewController {
                 self.doneButton.hidden = false;
                 var complete = PFObject(className: "Completed")
                 complete["userID"] = PFUser.currentUser()!.objectId!
-                complete["categoryID"] = self.currentObject!.objectId!
+                complete["categoryID"] = self.currentObject.objectId!
                 complete.saveEventually()
             }
         }
@@ -106,7 +106,7 @@ class QuestionViewController: UIViewController {
                 self.doneButton.hidden = false;
                 var complete = PFObject(className: "Completed")
                 complete["userID"] = PFUser.currentUser()!.objectId!
-                complete["categoryID"] = self.currentObject!.objectId!
+                complete["categoryID"] = self.currentObject.objectId!
                 complete.saveEventually()
             }
         }
@@ -128,10 +128,10 @@ class QuestionViewController: UIViewController {
         view.addGestureRecognizer(leftSwipe)
         view.addGestureRecognizer(rightSwipe)
 
-        QuestionLabel.text? = currentObject?["Question"] as! String
+        QuestionLabel.text? = currentObject["Question"] as! String
 
         var query = PFQuery(className: "Question")
-        query.whereKey("CategoryID", equalTo: currentObject!.objectId!)
+        query.whereKey("CategoryID", equalTo: currentObject.objectId!)
 
 
         query.findObjectsInBackgroundWithBlock {

@@ -89,7 +89,7 @@ class SurveyListController: PFQueryTableViewController {
             // Pass the selected object to the destination view controller.
             if let indexPath = self.tableView.indexPathForSelectedRow() {
                 let row = Int(indexPath.row)
-                detailScene.currentObject = objects?[row] as! PFObject
+                detailScene.currentObject = (objects![row] as? PFObject)!
             }
         }
         

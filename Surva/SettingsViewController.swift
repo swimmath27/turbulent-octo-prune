@@ -7,11 +7,38 @@
 //
 
 import UIKit
+import Parse
 
 class SettingsViewController: UIViewController {
 
+    @IBOutlet weak var genderController: UISegmentedControl!
+    @IBOutlet weak var ageTextField: UITextField!
+    @IBOutlet weak var activityLoader: UIActivityIndicatorView!
+    @IBOutlet weak var saveButton: UIButton!
+
+    @IBAction func saveButton_Clicked(sender: AnyObject) {
+        activityLoader.hidden = false;
+        activityLoader.startAnimating()
+
+        var currentUser: PFUser = PFUser.currentUser()!
+        currentUser["Gender"] = genderController.selectedSegmentIndex == 0 ? "M" : "F"
+        var userAgeString: String = ageTextField.text
+        currentUser["Age"] = userAgeString.toInt()!
+
+        currentUser.saveEventually()
+
+        performSegueWithIdentifier("SavedSettings", sender: nil)
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
+        activityLoader.hidden = true;
+        activityLoader.hidesWhenStopped = true;
+        var currentUser = PFUser.currentUser()
+
+        genderController.selectedSegmentIndex = (currentUser!["Gender"] as! String) == "M" ? 0 : 1
+        ageTextField.text = currentUser!["Age"].stringValue!
+
 
         // Do any additional setup after loading the view.
     }
