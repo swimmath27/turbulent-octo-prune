@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		110994FA1BA4F1EE003739A5 /* SurveyListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110994F91BA4F1EE003739A5 /* SurveyListController.swift */; };
+		110994FC1BA4F362003739A5 /* ParseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 110994FB1BA4F362003739A5 /* ParseUI.framework */; };
+		110994FE1BA4F94A003739A5 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110994FD1BA4F94A003739A5 /* SettingsViewController.swift */; };
 		5504681A1BA3CE110083786E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550468191BA3CE110083786E /* AppDelegate.swift */; };
 		5504681D1BA3CE110083786E /* Surva.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5504681B1BA3CE110083786E /* Surva.xcdatamodeld */; };
 		550468221BA3CE110083786E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 550468201BA3CE110083786E /* Main.storyboard */; };
@@ -27,7 +30,6 @@
 		5526A03E1BA4A4D600BD694D /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 5526A03D1BA4A4D600BD694D /* libsqlite3.dylib */; };
 		5526A0401BA4AB7D00BD694D /* surva-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 5526A03F1BA4AB7D00BD694D /* surva-logo.png */; };
 		5526A0451BA4BE5900BD694D /* SignUpInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5526A0441BA4BE5900BD694D /* SignUpInViewController.swift */; };
-		5526A0491BA4ED4A00BD694D /* SurveyListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5526A0481BA4ED4A00BD694D /* SurveyListController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +43,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		110994F91BA4F1EE003739A5 /* SurveyListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SurveyListController.swift; sourceTree = "<group>"; };
+		110994FB1BA4F362003739A5 /* ParseUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseUI.framework; sourceTree = "<group>"; };
+		110994FD1BA4F94A003739A5 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		550468141BA3CE110083786E /* Surva.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Surva.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		550468181BA3CE110083786E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		550468191BA3CE110083786E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -67,7 +72,6 @@
 		5526A03F1BA4AB7D00BD694D /* surva-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "surva-logo.png"; sourceTree = "<group>"; };
 		5526A0431BA4B99C00BD694D /* Surva-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Surva-Bridging-Header.h"; sourceTree = "<group>"; };
 		5526A0441BA4BE5900BD694D /* SignUpInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpInViewController.swift; sourceTree = "<group>"; };
-		5526A0481BA4ED4A00BD694D /* SurveyListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SurveyListController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +91,7 @@
 				5526A02C1BA4A49600BD694D /* AudioToolbox.framework in Frameworks */,
 				5526A02A1BA4A45500BD694D /* Parse.framework in Frameworks */,
 				5526A0291BA4A45500BD694D /* Bolts.framework in Frameworks */,
+				110994FC1BA4F362003739A5 /* ParseUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -105,6 +110,7 @@
 			children = (
 				5526A03D1BA4A4D600BD694D /* libsqlite3.dylib */,
 				5526A03B1BA4A4CD00BD694D /* libz.dylib */,
+				110994FB1BA4F362003739A5 /* ParseUI.framework */,
 				5526A0391BA4A4C500BD694D /* SystemConfiguration.framework */,
 				5526A0371BA4A4BF00BD694D /* StoreKit.framework */,
 				5526A0351BA4A4B800BD694D /* Security.framework */,
@@ -143,7 +149,8 @@
 				550468171BA3CE110083786E /* Supporting Files */,
 				5526A0431BA4B99C00BD694D /* Surva-Bridging-Header.h */,
 				5526A0441BA4BE5900BD694D /* SignUpInViewController.swift */,
-				5526A0481BA4ED4A00BD694D /* SurveyListController.swift */,
+				110994FD1BA4F94A003739A5 /* SettingsViewController.swift */,
+				110994F91BA4F1EE003739A5 /* SurveyListController.swift */,
 			);
 			path = Surva;
 			sourceTree = "<group>";
@@ -276,8 +283,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				5504681A1BA3CE110083786E /* AppDelegate.swift in Sources */,
-				5526A0491BA4ED4A00BD694D /* SurveyListController.swift in Sources */,
 				5504681D1BA3CE110083786E /* Surva.xcdatamodeld in Sources */,
+				110994FE1BA4F94A003739A5 /* SettingsViewController.swift in Sources */,
+				110994FA1BA4F1EE003739A5 /* SurveyListController.swift in Sources */,
 				5526A0451BA4BE5900BD694D /* SignUpInViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
