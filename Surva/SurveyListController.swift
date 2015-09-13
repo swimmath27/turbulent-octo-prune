@@ -54,8 +54,14 @@ class SurveyListController: PFQueryTableViewController {
     
     // Define the query that will provide the data for the table view
     override func queryForTable() -> PFQuery {
+
+        //show all that the current user hasn't completed yet
+        var completedCategories = PFQuery(className: "Completed")
+        completedCategories.whereKey("userID", equalTo: PFUser.currentUser()!.objectId!)
+
         var query = PFQuery(className: "Category")
-        //query.whereKey
+        query.whereKey("objectId", doesNotMatchKey:"categoryID", inQuery:completedCategories)
+
         return query
     }
     
