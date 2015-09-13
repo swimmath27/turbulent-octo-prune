@@ -63,10 +63,6 @@ class SurveyListController: PFQueryTableViewController {
         return query
     }
     
-    struct globalData {
-        static var categoryID: String?
-    }
-    
     
     //override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath, object: PFObject?) -> PFTableViewCell {
@@ -80,9 +76,6 @@ class SurveyListController: PFQueryTableViewController {
         if let Question = object?["Title"] as? String {
             cell?.textLabel?.text = Question
         }
-        
-        // Create a variable that you want to send
-        globalData.categoryID = object!.objectId
         
         return cell
     }
