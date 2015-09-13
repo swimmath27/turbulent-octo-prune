@@ -24,8 +24,6 @@ class SurveyListController: PFQueryTableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
-        
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
         
@@ -59,6 +57,10 @@ class SurveyListController: PFQueryTableViewController {
         return query
     }
     
+    struct globalData {
+        static var categoryID: String?
+    }
+    
     
     //override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath, object: PFObject?) -> PFTableViewCell {
@@ -73,8 +75,25 @@ class SurveyListController: PFQueryTableViewController {
             cell?.textLabel?.text = Question
         }
         
+        // Create a variable that you want to send
+        globalData.categoryID = object!.objectId
+        
         return cell
     }
     
-    
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        
+        // Get the new view controller using [segue destinationViewController].
+        if segue.destinationViewController is QuestionViewController {
+            var detailScene = segue.destinationViewController as! QuestionViewController
+            // Pass the selected object to the destination view controller.
+            if let indexPath = self.tableView.indexPathForSelectedRow() {
+                let row = Int(indexPath.row)
+                detailScene.currentObject = objects?[row] as! PFObject
+            }
+        }
+        
+        
+    }
 }

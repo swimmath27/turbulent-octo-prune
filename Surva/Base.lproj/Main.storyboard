@@ -259,6 +259,9 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="k2i-3o-eH0" kind="show" id="dzj-wJ-Gvs"/>
+                                </connections>
                             </tableViewCell>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell2" textLabel="mwN-Ah-3PJ" style="IBUITableViewCellStyleDefault" id="1i2-v1-tNH" customClass="PFTableViewCell">
                                 <autoresizingMask key="autoresizingMask"/>
@@ -290,15 +293,79 @@
                                 <action selector="signOut:" destination="Qta-iU-Dky" id="T2P-pf-LOJ"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" title="Settings" id="Dfq-fV-jew"/>
+                        <barButtonItem key="rightBarButtonItem" title="Settings" id="Dfq-fV-jew">
+                            <connections>
+                                <segue destination="ixX-Nk-dbs" kind="show" id="hHe-QE-fJP"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <segue destination="ixX-Nk-dbs" kind="show" id="HJC-TC-aQQ"/>
+                        <segue destination="k2i-3o-eH0" kind="show" identifier="QuestionSegue" id="Mud-gK-420"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9a4-xa-7lo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1599" y="-2447"/>
+        </scene>
+        <!--Question View Controller-->
+        <scene sceneID="xJd-KQ-ham">
+            <objects>
+                <viewController id="k2i-3o-eH0" customClass="QuestionViewController" customModule="Surva" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="cyD-WY-VWM"/>
+                        <viewControllerLayoutGuide type="bottom" id="hNe-Sw-CVC"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="pJE-Xl-40L">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kne-mk-X4Q">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="133" y="72" width="135" height="50"/>
+                                </variation>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8Qj-7f-Gjc">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="80" y="164" width="240" height="240"/>
+                                </variation>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap to continue" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Tm-rC-iEZ">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="141" y="559" width="119" height="21"/>
+                                </variation>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="Kne-mk-X4Q"/>
+                                <exclude reference="8Qj-7f-Gjc"/>
+                                <exclude reference="8Tm-rC-iEZ"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="Kne-mk-X4Q"/>
+                                <include reference="8Qj-7f-Gjc"/>
+                                <include reference="8Tm-rC-iEZ"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="label" destination="Kne-mk-X4Q" id="iOZ-kP-2SN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Euh-JQ-Y7e" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-661.5" y="-2094"/>
         </scene>
         <!--Settings View Controller-->
         <scene sceneID="oJ2-Xa-38w">
@@ -336,10 +403,13 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eC5-2p-wkR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-913.5" y="-2444"/>
+            <point key="canvasLocation" x="-670.5" y="-2832"/>
         </scene>
     </scenes>
     <resources>
         <image name="surva-logo.png" width="1580" height="400"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="Mud-gK-420"/>
+    </inferredMetricsTieBreakers>
 </document>
